@@ -1,0 +1,127 @@
+
+/* inherited */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /* 100 - 900 normal values for font-weight 100 is thinnest, 900 is thickest */
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  color: #FFFFFF;
+
+
+
+  background-color: #1b1b1b;
+  place-items: center; /* Justify container horizontally */
+
+}
+
+.centered_content {
+    justify-content: center; /* Centers the grid container horizontally */
+    align-content: center; /* Centers the grid container vertically */
+}
+
+.centered_items {
+    justify-items: center; /* Horizontally centers items in their grid cells */
+    align-items: center; /* Vertically centers items in their grid cells */
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.half_section {
+    width: 50%;
+
+}
+
+.black_section {
+    background-color: #101010;
+    width: 100%;
+}
+
+/* Featured  Articles */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px white; /* line_type, thickness, color */
+    border-radius: 10px; /* Rounds corners of outter border edge, length or % */
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.article_title_flexbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+/* Contributor Spotlight */
+#contributor_item_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contributor_item_spacing {
+    row-gap: 40px;
+}
+
+#speaker_name {
+    font-size: 24px;
+    background-color: #FFFFFF;
+    color: #000000;
+    width: fit-content;
+}
+
+/* Table */
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table_cell {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    padding: 20px;
+    border-radius: 10px; /* Rounds corners of outter border edge, length or % */
+}
+
+.table_article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table_cell_gray {
+    background-color: #313131;
+}
+
+.table_article_link {
+    font-size: 12px;
+}
+
+
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* Reusable Component */
+.section_title {
+    text-align: left;
+    width: 100%; /*Make this as big as the parent, so the child can sit on the very left */
+    padding: 15px;
+}
+
+
+
+
